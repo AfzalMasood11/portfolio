@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '0.17.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -31,6 +33,13 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+
+group :production do
+  # for Heroku to serve static assets such as images and stylesheets.
+  gem 'rails_12factor', '0.0.2'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
