@@ -11,6 +11,9 @@ gem 'pg', '0.17.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Use bootstrap
+gem 'bootstrap-sass', '3.1.1.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -34,6 +37,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'rails_layout', '1.0.10'
+end
 
 group :production do
   # for Heroku to serve static assets such as images and stylesheets.
