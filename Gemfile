@@ -14,6 +14,9 @@ gem 'sass-rails', '~> 4.0.0'
 # Use bootstrap
 gem 'bootstrap-sass', '3.1.1.0'
 
+# Add Generator in bootstrap-sass
+gem 'bootstrap-generators', '~> 3.1.1'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
